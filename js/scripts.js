@@ -4,9 +4,9 @@ $(document).submit(function(){
   let input = parseInt($("#number").val());
   let total = input;
   
-  for (let i = 0; i < input; i + 1) {
-    input = input - i
-    total = total * input
+  for (let i = 0; i < input; i += 1) {
+    let multi = input - i
+    total = total * multi;
     console.log(total);
   }
   //console.log(total);
